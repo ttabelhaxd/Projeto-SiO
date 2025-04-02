@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# rep_delete_doc <session file> <document name>
+
+if [ -z "$1" ] || [ -z "$2" ]; then
+    echo "Usage: $0 <session file> <document name>"
+    exit 1
+fi
+
+python3 ../api/cli/authorized_api_cli.py rep_delete_doc $1 $2

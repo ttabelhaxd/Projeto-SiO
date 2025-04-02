@@ -1,0 +1,12 @@
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - REP_ADDRESS=http://127.0.0.1:5000
+      - REP_PUB_KEY=pubkey
+    volumes:
+      - ./instance:/delivery1/instance
+    container_name: sio_backend
+    command: ["python", "-m", "api.app"]

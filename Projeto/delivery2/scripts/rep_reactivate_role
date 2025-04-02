@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#./rep_reactivate_role <session file> <role>
+python3 ../api/cli/authorized_api_cli.py rep_reactivate_role $1 $2

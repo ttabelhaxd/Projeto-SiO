@@ -1,0 +1,5 @@
+flask
+requests
+flask-sqlalchemy
+cryptography
+Werkzeug

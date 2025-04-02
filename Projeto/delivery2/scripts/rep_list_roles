@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#./rep_list_roles <session file>
+python3 ../api/cli/authenticated_api_cli.py rep_list_roles $1

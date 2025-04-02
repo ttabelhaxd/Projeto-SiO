@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#./rep_remove_permission <session file> <role> <username/permission>
+python3 ../api/cli/authorized_api_cli.py rep_remove_permission $1 $2 $3
